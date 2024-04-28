@@ -17,3 +17,8 @@ go_binary(
     name = "variables",
     srcs = ["variables.go"],
 )
+
+go_binary(
+    name = "basic-types",
+    srcs = ["basic-types.go"],
+)

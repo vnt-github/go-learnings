@@ -17,8 +17,20 @@ func swap(x, y string) (string, string) {
 	return y, x
 }
 
+// Go's return values are treated as variables defined at the top of the function.
+func named_return(sum int) (x, y int) {
+	x = sum * 4/9
+	y = sum - x
+
+	// A return statement without arguments returns the named return values. This is known as a "naked" return.
+	// Naked return statements should be used only in short functions, as with the example shown here. They can harm readability in longer functions.
+	return
+}
+
 func main() {
 	// const variables of type int, const values must be defined along with declaration
+	// Constants cannot be declared using the := syntax.
+	// Constants can be character, string, boolean, or numeric values.
 	const MaxRandomIntRange int = 100
 
 	// variables a and b for holding random values to print
@@ -32,4 +44,9 @@ func main() {
 	fmt.Println("after swap, with := ie. declaration and assignment\nx:", x, "y:", y)
 
 	// := is only used for declaration and assignment, for reassignment use =
+	x = "alpha"
+
+	fmt.Println("after reassignment with '=' x:", x, "y:", y)
+
+	fmt.Println(named_return(95))
 }
