@@ -42,3 +42,18 @@ go_binary(
     name = "numeric-constant",
     srcs = ["numeric-constant.go"],
 )
+
+go_binary(
+    name = "array-tutorials",
+    srcs = ["array-tutorials.go"],
+)
+
+go_binary(
+    name = "pointers",
+    srcs = ["pointers.go"],
+)
+
+go_binary(
+    name = "structs",
+    srcs = ["structs.go"],
+)

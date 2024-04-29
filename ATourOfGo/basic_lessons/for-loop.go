@@ -19,7 +19,7 @@ import (
 // 	return new_value
 // }
 
-func Sqrt(x float64) (a float64) {
+func mySqrt(x float64) (a float64) {
 	currentValue := 1.0
 	precision := 0.000000001
 	newValue := currentValue - ((currentValue*currentValue - x) / (2 * currentValue))
@@ -32,6 +32,6 @@ func Sqrt(x float64) (a float64) {
 
 func main() {
 	q := 10.0
-	ans := Sqrt(q)
+	ans := mySqrt(q)
 	fmt.Println(ans, ans*ans, q, runtime.GOOS)
 }

@@ -18,8 +18,8 @@ func swap(x, y string) (string, string) {
 }
 
 // Go's return values are treated as variables defined at the top of the function.
-func named_return(sum int) (x, y int) {
-	x = sum * 4/9
+func namedReturn(sum int) (x, y int) {
+	x = sum * 4 / 9
 	y = sum - x
 
 	// A return statement without arguments returns the named return values. This is known as a "naked" return.
@@ -48,5 +48,5 @@ func main() {
 
 	fmt.Println("after reassignment with '=' x:", x, "y:", y)
 
-	fmt.Println(named_return(95))
+	fmt.Println(namedReturn(95))
 }
