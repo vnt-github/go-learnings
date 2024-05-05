@@ -57,3 +57,53 @@ go_binary(
     name = "structs",
     srcs = ["structs.go"],
 )
+
+go_binary(
+    name = "go-conditions",
+    srcs = ["go-conditions.go"],
+)
+
+go_binary(
+    name = "closures-fib",
+    srcs = ["closures-fib.go"],
+)
+
+go_binary(
+    name = "exercise-slices",
+    srcs = ["exercise-slices.go"],
+)
+
+go_binary(
+    name = "matrix-via-slice",
+    srcs = ["matrix-via-slice.go"],
+)
+
+go_binary(
+    name = "slice-literals",
+    srcs = ["slice-literals.go"],
+)
+
+go_binary(
+    name = "slice-via-make",
+    srcs = ["slice-via-make.go"],
+)
+
+go_binary(
+    name = "slices-len-cap",
+    srcs = ["slices-len-cap.go"],
+)
+
+go_binary(
+    name = "function-values",
+    srcs = ["function-values.go"],
+)
+
+go_binary(
+    name = "map-basics",
+    srcs = ["map-basics.go"],
+)
+
+go_binary(
+    name = "word-count",
+    srcs = ["word-count.go"],
+)
