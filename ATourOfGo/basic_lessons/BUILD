@@ -107,3 +107,8 @@ go_binary(
     name = "word-count",
     srcs = ["word-count.go"],
 )
+
+go_binary(
+    name = "methods",
+    srcs = ["methods.go"],
+)
