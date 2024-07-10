@@ -1,4 +1,4 @@
-glaze -p //experimental/users/vineetbharot/playgrounds/go/go-learnings/ATourOfGo/basic_lessonspackage main
+package main
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ func (receverArgV vertex) Abs() float64 {
 // (Also, T cannot itself be a pointer such as *int.)
 // For example, the Scale method here is defined on *Vertex.
 // Methods with pointer receivers can modify the value to which the receiver points (as Scale does here).
-Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
+// Since methods often need to modify their receiver, pointer receivers are more common than value receivers.
 // This Scale method must have a pointer receiver to change the Vertex value declared in the main function.
 func (receiverPtrArg *vertex) Scale(f float64) {
 	receiverPtrArg.X *= f

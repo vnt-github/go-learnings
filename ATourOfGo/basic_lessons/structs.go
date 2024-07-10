@@ -7,7 +7,7 @@ import (
 
 // The type keyword provides a way to name and define new types in Go, making your code more organized, modular, and reusable. Type can be used for non struct purposes as well.
 // The struct keyword, used within a type declaration, provides the structure and blueprint for the data you want to group together, enabling you to create variables of that type.
-// hence struct has to be with type but type can be without struct
+// struct without a type is called anonymous structs.
 type vertex struct {
 	X int
 	Y int
@@ -37,4 +37,12 @@ func main() {
 	fmt.Println(v, p, &v, p.X, v.X, &v.X, &p.X)
 	fmt.Println(reflect.TypeOf(v), reflect.TypeOf(p), reflect.TypeOf(v.X))
 	fmt.Println(v1, p1, v2, v3, v4)
+
+	// If a struct type is only used for a single value, we don’t have to give it a name. The value can have an anonymous struct type.
+	anonymous_struct_dog := struct {
+		name string
+		isGood bool
+	} {"bolt", true}
+
+	fmt.Println(anonymous_struct_dog)
 }

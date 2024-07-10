@@ -112,3 +112,19 @@ go_binary(
     name = "methods",
     srcs = ["methods.go"],
 )
+
+go_binary(
+  name = "interfaces",
+  srcs = ["interfaces.go"]
+)
+
+go_binary(
+  name="methods-indirection",
+  srcs=["methods-indirection.go"]
+)
+
+go_binary(
+  name = "stringers",
+  srcs = ["stringers.go"]
+)
+
